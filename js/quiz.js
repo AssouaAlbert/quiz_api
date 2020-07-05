@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',loadsQuestions);
 async function loadsQuestions() {
     loadfromLS();
     console.log("Loading Queations");
-    const url = 'http://opentdb.com/api.php?amount=1';
+    const url = 'https://opentdb.com/api.php?amount=1';
     const response = await new Promise((resolve,reject)=>{
         const xhr = new XMLHttpRequest();
         xhr.open('GET',url, true);
